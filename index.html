@@ -9,10 +9,17 @@
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
         rel="stylesheet"
     >
+    <!--Estilo-->
+    <style>
+        .form-control:focus {
+            border-color: #000000 !important;
+            box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.25) !important;
+        }
+    </style>
 </head>
 <body>
     <!-- Cabeçalho -->
-    <header class="bg-primary text-white py-4">
+    <header class="bg-dark text-white py-4">
         <div class="container">
             <h1 class="mb-1">Minha To-Do List</h1>
             <p class="mb-0">
@@ -35,12 +42,12 @@
                     <input
                         type="text"
                         id="tarefa"
-                        class="form-control"
+                        class="form-control focus-ring focus-ring-dark"
                         placeholder="Digite uma tarefa..."
                         autocomplete="off">
                     <button
                         type="submit"
-                        class="btn btn-primary">
+                        class="btn btn-dark">
                         Adicionar
                     </button>
                 </div>
@@ -54,7 +61,7 @@
                 </h2>
                 <span
                     id="contador"
-                    class="badge text-bg-secondary">
+                    class="badge text-bg-dark">
                     0 tarefas
                 </span>
             </div>
